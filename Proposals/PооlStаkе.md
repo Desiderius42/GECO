@@ -5,17 +5,12 @@
 PꝏlStake Slashing Insurance
 
 ### Team members 
-[Marouane Hajji](https://www.linkedin.com/in/marouane-h-b876133/)
-
-[Emmanuel Lаnɡе](https://www.linkedin.com/in/emmanuellange/)
-
-Julien Klepatch
-
-Reza Bakhshandeh
-
-Muhammad Mafazine
-
-Jean-Baptiste Soufron
+[Marouane Hajji](https://www.linkedin.com/in/marouane-h-b876133/)  <br/>
+[Emmanuel Lаnɡе](https://www.linkedin.com/in/emmanuellange/)  <br/>
+Julien Klepatch  <br/>
+Reza Bakhshandeh  <br/>
+Muhammad Mafazine  <br/>
+Jean-Baptiste Soufron  <br/>
 
 ### What project are you building 
 PꝏlStake is a self-funded experiment consisting on creating series of Ethereum Smart Contracts and building tools related to pooling and staking. The idea is to provide pieces of software that allow people to leverage their number and regroup (pooling) in different kinds of settings and in a decentralized manner. Staking and staking derivatives became our main focus as we were discussing with the different blockchain projects in the space and their communities.
