@@ -5,11 +5,16 @@
 PꝏlStake Slashing Insurance
 
 ### Team members 
-Marouane Hajji
-Emmanuel Lаnɡе
+[Marouane Hajji](https://www.linkedin.com/in/marouane-h-b876133/)
+
+[Emmanuel Lаnɡе](https://www.linkedin.com/in/emmanuellange/)
+
 Julien Klepatch
+
 Reza Bakhshandeh
+
 Muhammad Mafazine
+
 Jean-Baptiste Soufron
 
 ### What project are you building 
