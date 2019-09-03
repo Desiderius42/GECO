@@ -35,14 +35,13 @@ While discussing with different members of staking communities (blockchain proje
 
 __The problems and pain points we tackle:__
 
-####1) Staking is risky, let’s make it risk-free
+>1) Staking is risky, let’s make it risk-free
 
 As explained in the previous section, the slashing risk does exist even though it can be perceived as having a very low probability, it happened and can still happen.
 
 **We want to make the staking activity as risk-free as possible for delegators.**
 
- 
-####2) The staking activity is perceived as a commodity, it is not
+>2) The staking activity is perceived as a commodity, it is not
 
 Different types of validators exist and so far the only way to differentiate between a validator and another are the fees they apply. Some validators try to be as transparent as possible regarding their setups to show they are serious and committed to providing the most secure experience for their delegators, however the transparency marketing efforts don’t seem to be enough and do not represent any actual guarantee.
 
@@ -56,7 +55,7 @@ In the spirit of differentiation, validators could also use the insurance produc
 
 **We want validators to use the insurance as an additional service proposal that could help them increase their fees and differentiate in an already crowded market.**
 
-####3) Liquidity of Delegation Vouchers or Bonded Atoms:
+>3) Liquidity of Delegation Vouchers or Bonded Atoms:
 
 Right now the delegation process implies a lock-up period of 21 days after unbonding before a delegator could move his Atoms. Unbonded Atoms can still be slashed during the 21 days lock-up period. Since the launch of Cosmos Hub, a need has been expressed by the community to have an alternative that gives more liquidity to delegators, either by using Delegation Vouchers (whenever someone stakes Atoms with a validator, he would receive a voucher representing staked Atoms + staking rewards to be retrieved from said validator) or bAtoms which is a similar solution. Both options create illiquid assets, each asset being linked to one particular validator and his slashing risk. Combining the resulting asset with an insurance would allow to neutralize the slashing risk and create a slashing-risk-free asset which will be more liquid.
 
