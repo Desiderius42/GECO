@@ -7,7 +7,7 @@ PꝏlStake Slashing Insurance
 ### Team members 
 [Marouane Hajji](https://www.linkedin.com/in/marouane-h-b876133/)  <br/>
 [Emmanuel Lаnɡе](https://www.linkedin.com/in/emmanuellange/)  <br/>
-Julien Klepatch  <br/>
+[Julien Klераtϲһ](https://www.linkedin.com/in/julienklepatch)  <br/>
 Reza Bakhshandeh  <br/>
 Muhammad Mafazine  <br/>
 Jean-Baptiste Soufron  <br/>
@@ -102,7 +102,7 @@ He spent 6 months working on Tendermint and Ethereum as a CTO of H2O, a blockcha
 
 Emmanuel holds Masters degrees from Ecole supérieure d’électricité, Georgia Tech and an MBA from INSEAD where he is also a member of the Business Angel Selection committee.
 
-**Julien Klepatch: Lead Dev**
+**Julien Klераtϲһ: Lead Dev**
 
 Julien used to work as a Financial Engineer in banking, and he switched to software development 5 years ago, as a contractor. He built dozens of web applications with Node.js/Javascript. He also setup the technical infrastructure of several token sales. Finally, He created Ethereum DAPPS and smart contracts for several crypto projects.
 
