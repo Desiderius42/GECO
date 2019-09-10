@@ -115,9 +115,75 @@ Investors can :
 
 __Smart Contracts features:__
 
-- The order book contract: This contract will act as an order book, allowing Dai to be deposited and bid orders to be posted as well as premiums to be “market-bought” on the one hand. And 1155 tokens to be received and redeemed on the other hand.
+- **The order book contract:** This contract will act as an order book, allowing Dai to be deposited and bid orders to be posted as well as premiums to be “market-bought” on the one hand. And 1155 tokens to be received and redeemed on the other hand.
 
 ![The order book contract](./assets/PооlStаkе/The_order_book_contract.svg )
+
+![The order book splitting](./assets/PооlStаkе/The_order_book_contract_splitting.svg )
+
+Comments:
+In case the validator is slashed the delegator will receive a percentage of the value at risk (here 50DAI), this could be up to 100%.
+In case the validator stops validating the delegator will be reimbursed a prorata temporis part of what they have paid (here 5 DAI).
+
+- **The conditional airdrop contract:** will distribute the 1155 tokens to ethereum wallets based on a set of conditions and will cancel the 1155 contract given certain conditions as well.
+
+![The airdrop contract](./assets/PооlStаkе/Airdrop_contract.svg )
+
+![The airdrop splitting](./assets/PооlStаkе/Airdrop_splitting.svg )
+Comments:
+The delegator receives a free insurance through a token as long as he is still delegating. If he stops delegating, he loses the coverage.
+
+**Oracle features:**
+
+The Oracle will be based on a modified version of Cosmos SDK that will allow to extract all the needed data to be transmitted to the Gnosis Mercury smart contract in order to check which conditions are met. The objective is to build what we can call an “Interchain Oracle”.
+
+The required data (slashing and historical delegations / redelegations data) can not currently be queried through RPC or via any API which led us to explore different paths to extract it. We came up with 8 different approaches ranging from a fully centralized one to almost trustless and decentralized ones. The approaches can be effectively implemented but further research is still needed to choose the best option and maybe explore some other paths. The options include the possible leverage and integration of Chainlink, Provable or Realtio to incentive data providers.
+
+Here is an example of what an oracle design could look like:
+
+![Oracle schematics](./assets/PооlStаkе/oracle.svg )
+
+__User Interface features:__
+
+The interface is made of 2 different blocks based on the two smart contracts: General interface and the Conditional Airdrop Interface
+
+__General Interface features:__
+
+Different screens will be showing:
+- The list of all validators with the possibility to search for one and rank them by Risk Score / Transaction Volume over a period of time
+- The order book of each validator
+- The transaction history of each validator
+- Graphs: variation of premium prices / risk score / volume over time (similar to trading interfaces)
+
+**Investors** will be able to: deposit funds, place and cancel bids, retrieve unused funds, receive 1155 tokens, send 1155 tokens back to the smart contract, retrieve Dai
+Investors will also have a dashboard showing their current, past positions and P&L.
+
+**Delegators** will be able to: buy a premium, retrieve 1155 tokens, retrieve Dai
+Delegators will have a dashboard showing their current and past transactions, this will be mainly a buying history including all the premiums they bought.
+
+__Conditional Airdrop Interface features:__
+
+We will have a conditional airdrop interface for both validators and delegators.
+
+**Validators** will make a transaction to create 1155 tokens after defining the different conditions of the airdrop, then they will be able to:
+- Have access to up-to-date data regarding cosmos wallets matching said conditions and afferent ethereum wallets
+- Distribute 1155 tokens to chosen on the interface or manually entered ethereum wallets
+- Allow delegators to claim their tokens
+
+**Delegators** will be able to sign using their ethereum wallets and see if they match the conditions for one or many validators they made delegations to then the quantity of tokens they could claim for each validator. And of course they will be able to make the transaction to claim due tokens.
+
+__API, DB and snippet features:__
+
+The API will allow others (validators, block explorers, investors) to have a feed containing all the data we show to the users to exploit it (show it to delegators, analyze it, etc …).
+The API will have a documentation and will be done in markdown in a github repo.
+
+The API will rely on data coming from a DB that will index the different smart contracts’ events through a separate process that listens to the blockchain events with web3 (websocket).
+The resulting data will be mainly historical data of bids and transactions + transactions details for each validator. The transactions data will be used for the Risk Score calculations of each validator.
+
+The data in the database will be used on the front-end (as described above)
+
+The code snippet will be generated for a validator to allow them to show their risk score and a call to action to purchase a premium (the same way Yotpo or Trustpilot is used on e-commerce websites) directly on their websites by adding 3 lines of script.
+
 
 ### Team description
 **Marouane Hajji: Product / Business Lead**
@@ -176,21 +242,8 @@ Or :
 [Julien Coudert](https://www.linkedin.com/in/julien-coudert/)
 
 ### Timeline, Milestones and Deliverables
-_Detailed description of your timeline milestones and the corresponding payouts_
-
-**Phase I**  			_Outline the different phases_
-
-**Deliverables** 			_What features will be implemented_
-
-**Time and Price Estimate**	_How long will it take and what is the estimated price_
-
-**Phase II**  			_Outline the different phases_
-
-**Deliverables** 			_What features will be implemented_
-
-**Time and Price Estimate**	_How long will it take and what is the estimated price_
-
-**Phase III**  			_..._
+**High Level GANTT (GECO + ICF Grants)**
+![GANT chart](./assets/PооlStаkе/gantt.svg )
 
 
 ### Others	 
