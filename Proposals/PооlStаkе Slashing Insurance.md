@@ -244,7 +244,86 @@ Or :
 ### Timeline, Milestones and Deliverables
 **High Level GANTT (GECO + ICF Grants)**
 ![GANT chart](./assets/PооlStаkе/gantt.svg )
+GECO grant only case:
 
+The total cost estimate for the project is 105 500€. Out of which 46 000€ are part of the ICF grant and 59 500€ are part of the GECO grant.
+In case we don’t have the ICF grant, we will still be able to deliver the core implementation by removing some features: 
+- We won’t implement the conditional airdrop smart contract (-6250€) and its UI integration (-5500€).
+- We won’t implement the API and the snippet (-3000€).
+- We won’t implement Wallet Connect and use your own wallet (-6000€)
+- For the Oracle, we will go for a simple centralized solution that will cost 8000€ to implement instead of 32 000€ (-24 000€)
+- The audit will cost 4000€ instead of 10000€ (-6000€)
+
+These changes will bring the cost estimate to 54 750€.
+
+
+####Milestones and deliverables:
+
+**Phase 1: Smart Contracts**
+
+**Deliverables:**
+The order book contract and conditional airdrop contract. The two contracts being fully tested and functional.
+
+**Time and price estimate:** 1.2 FTE for 4 weeks to develop and test, 12500€
+
+**Phase 2: Minimal UI and Web3 Integration**
+
+**Deliverables:** 
+Web3 integration will cover both Metamask and Wallet Connect / Gnosis Safe Chrome extension.
+A minimal UI using Drizzle / React to support Metamask and allow users to interact with the smart contracts.
+
+Safe will be supported separately using https://github.com/gnosis/safe-web3-provider
+Use your preferred wallet option (web3 provider is not detected): transaction details (smart contract address, Gas/Gwei and Data to be included) will be shown and the user will be free to use another wallet (as already currently implemented on PoolStake).
+
+**Time and price estimate:** 1.2 FTE for 3 weeks, 9000€
+
+**Phase 3: DB + R.S. / premiums API + documentation + code snippet**
+**Deliverables:** 
+Separate script saving all the data in a DB and an API allowing external actors to query data. The API will be documented.
+
+Code snippet that can be added on validator websites to show their risk score and data related to their premiums
+
+**Time and price estimate:** 1.2 FTE for 2 weeks, 6000€
+
+
+
+**Phase 4: User Interface Design**
+
+**Deliverables:**
+Storyboards, wireframes of the UI to get to a final flow and layout.
+3 overall look and feel proposals out of which one will be selected.
+The final deliverable will be detailed UI specifications including all the designs, images, icons, etc …
+
+**Time and price estimate:** UX/UI Freelance / Design Agency + ⅓ FTE for 6 weeks, 14500€
+
+**Phase 5: User Interface Integration**
+
+**Deliverables:** The detailed UI specs and the design elements that will be provided will be implemented while using data coming from the database and from web3.
+
+**Time and price estimate:** 1.5 FTE for 3 weeks + 1 FTE for 3 weeks testing, 11000€ + 6500€
+
+**Phase 6: Oracles and APIs**
+
+
+**Deliverables:**
+
+ Fully functional and decentralized solution allowing to get the needed data and transmit it to Gnosis Mercury contracts.
+
+**Time and price estimate:** 1.8 FTE for 6 weeks, 32000€ (to be funded by ICF)
+
+
+**Phase 7: Security audits**
+
+**Deliverables:** Audit of the different smart contracts and the oracle.
+
+**Time and price estimate:** external audit firm, 10000€ (to be funded by ICF)
+
+
+**Phase 8:** Content and educational material
+
+**Deliverables:** FAQ, screencasts/ How-to videos for delegators, validators and investors.
+
+**Time and price estimate:** on going, 4000€ (to be funded by ICF)
 
 ### Others	 
 Anything else you want to share with us
