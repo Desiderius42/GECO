@@ -187,7 +187,7 @@ The code snippet will be generated for a validator to allow them to show their r
 
 
 # Team description
-##Marouane Hajji: Product / Business Lead
+## Marouane Hajji: Product / Business Lead
 
 Marouane first experience with code started when he was 13 years old. Later, his interest in the business world led him to get a degree from ESSEC Business School where he first studied Finance then Entrepreneurship.
 
@@ -198,7 +198,7 @@ As a former smoker, he created and launched a connected vaping device to help sm
 
 Starting from 2016 he started exploring Ethereum and pretty quickly the technology and the subsequent possibilities became an obsession for him. This led him to create and self fund PꝏlStake, a 4 people team experimenting using smart contracts to provide different sets of tools for the crypto community. After Emmanuel joined him they started focusing on staking derivatives.
 
-##Emmanuel Lаnɡе: Tech Lead
+## Emmanuel Lаnɡе: Tech Lead
 
 Emmanuel has 15 years experience as a software developer. During his years in engineering school he had a deep interest in cryptographic technology and what is now called post-quantum communication was the subject of his final year thesis. He started his career as a developer and coded the first MPEG-4 HD encoder in the world (still in use today after more than 9 years). Then he co-founded BrightLoop, the company designed and manufactured software driven  power supplies for large companies and implemented industry leading software development processes. He partially sold his shares in the company and joined SoftBank Robotics as a Project Manager then SES-Imagotag (world leader in IoT deployments) as VP of Strategic program.
 
@@ -207,7 +207,7 @@ He spent 6 months working on Tendermint and Ethereum as a CTO of H2O, a blockcha
 
 Emmanuel holds Masters degrees from Ecole supérieure d’électricité, Georgia Tech and an MBA from INSEAD where he is also a member of the Business Angel Selection committee.
 
-##Julien Klераtϲһ: Lead Dev
+## Julien Klераtϲһ: Lead Dev
 
 Julien used to work as a Financial Engineer in banking, and he switched to software development 5 years ago, as a contractor. He built dozens of web applications with Node.js/Javascript. He also setup the technical infrastructure of several token sales. Finally, He created Ethereum DAPPS and smart contracts for several crypto projects.
 
@@ -217,17 +217,17 @@ Beside a solid experience in full stack web development and blockchain technolog
 
 Julien holds an MSc Engineering Degree from Ecole des Mines d’Albi and a MSc in Finance Degree from HEC.
 
-**Reza Bakhshandeh: Back-end and smart contracts**
+## Reza Bakhshandeh: Back-end and smart contracts
 
 Software Engineering bachelor and AI master degree. Reza worked previously at Boosto.io and since june 2018 on PꝏlStake, he has 14 years experience in software development and spent the last 36 months designing Tokens and Solidity Smart Contracts. He will be working part-time on the slashing insurance product under Emmanuel’s supervision.
 
 
-**Muhammad Mafazine: CSS, JS and HTML wizard**
+## Muhammad Mafazine: CSS, JS and HTML wizard
 
 Muhammad worked with Marouane on both LіquіdΒοх and PꝏlStake, he will be working part-time on the integration part of the front-end under Marouane’s supervision.
 
 
-**Jean-Baptiste Soufron: Legal Advisor**
+## Jean-Baptiste Soufron: Legal Advisor
 
 Lawyer and writer, he is known for his high expertise in the digital realm. His mastership and passion led him to be the Chief Legal Officer of the Wikimedia Foundation and director of the think tank Cap Digital. He was also General Secretary of the Conseil National du Numérique after being an advisor to french President François Holland.
 
