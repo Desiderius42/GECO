@@ -13,74 +13,112 @@ Muhammad Mafazine  <br/>
 Jean-Baptiste Soufron  <br/>
 
 ### What project are you building 
-PꝏlStake is a self-funded experiment consisting on creating series of Ethereum Smart Contracts and building tools related to pooling and staking. The idea is to provide pieces of software that allow people to leverage their number and regroup (pooling) in different kinds of settings and in a decentralized manner. Staking and staking derivatives became our main focus after numerous discussions with the different PoS blockchain projects in the space and their communities.
+PoolStake is a self-funded experiment consisting on creating series of Ethereum Smart Contracts and building tools related to pooling and staking. The idea is to provide pieces of software that allow people to leverage their number and regroup (pooling) in different kinds of settings and in a decentralized manner. Staking pools and staking derivatives became our main focus after numerous discussions with the different PoS blockchain projects in the space and their communities.
 
 One of the tools that we are currently building is an insurance-like product for slashing events.
-In order to implement it, we will use prediction markets and build it on top of the Conditional Token Standard (Gnosis Mercury) and connect it to the Cosmos Hub as our first PoS Blockchain to insure. This will enable our users to have access to a new type of product through an insurance like market-place while bringing a solution to a current pain point in the staking process in PoS blockchain.
-
-To help understand what we are building and what staking derivatives are, here are some definitions that are based on the Tendermint (Cosmos) PoS consensus:
-Proof of Stake (PoS): consensus mechanism that runs virtually instead of relying on miners to solve hard cryptographic puzzles using their computer power.
-
-Validator: In PoS validators replace miners. Validators offer coin holders of a PoS blockchain the possibility to use their infrastructure to lock some coins as a stake. Validators then participate in the consensus process and get rewarded when blocks are added. The Staking Rewards are distributed to the coin holders and the validators is paid a percentage fee on these rewards. Validators are businesses who secure the network.
-
-Slashing: The punishment that occurs in case of a misbehaviour from one or several validators. Misbehaviours can range from being offline and missing blocks to double signing and trying to conduct an attack on the network. The slashing punishment ranges from 0.1% to 5% of the staked coins (with misbehaving validator) in the case of Cosmos Hub. The punishment can vary from one blockchain to another.
-
-Staking derivatives: coins, tokens or tools based on the staking activity.
-
+In order to implement it, we will use prediction markets and build it on top of the Conditional Token Standard (Gnosis Mercury) and connect it to the Cosmos Hub as our first PoS Blockchain to insure. This will enable our users to have access to a new type of product through an insurance like market-place while bringing a solution to the current pain point being the slashing risk in the staking process of PoS blockchains.
 
 ### Why did you decide to build it 
-Marouane created several communities on social media in the past, tackling real problems of particular populations/minorities (and sometimes giving birth to small movements). When he joined the first crypto and blockchain related communities, he always thought of tools that could help them gain more power, leverage the number and the crowd-knowledge / collective intelligence. So he used PoolStake as a way to try to provide tools and also to learn by building and interacting with dApp users. The first tools were related to ICOs and trading, the ones we are focusing on building now are more related to staking as PoS will come with its own sets of challenges.
+PoolStake is a self-funded experiment consisting on creating series of Ethereum Smart Contracts and building tools related to pooling and staking. The idea is to provide pieces of software that allow people to leverage their number and regroup (pooling) in different kinds of settings and in a decentralized manner. Staking pools and staking derivatives became our main focus after numerous discussions with the different PoS blockchain projects in the space and their communities.
 
-While discussing with different members of staking communities (blockchain projects, delegators, validators, block explorers, wallet providers, etc ...), Marouane and Emmanuel identified series of pain points which led them to focus on staking derivatives as possible solutions. The staking derivative with the most potential appeared to be a slashing insurance. After spending 6 weeks meeting with validators and delegators from the Cosmos Network they had a strong confirmation of their initial intuition. So they managed to collect signatures of a Letter of Intent from 13 validators representing 25% of the voting power of the Cosmos Hub. They also got the support of Wallet Providers and Block Explorers. The existence of a product/market fit combined with the possibility to bring some relief to a real pain led them to decide to build it.
+One of the tools that we are currently building is an insurance-like product for slashing events.
+In order to implement it, we will use prediction markets and build it on top of the Conditional Token Standard (Gnosis Mercury) and connect it to the Cosmos Hub as our first PoS Blockchain to insure. This will enable our users to have access to a new type of product through an insurance like market-place while bringing a solution to the current pain point being the slashing risk in the staking process of PoS blockchains.
 
-__The problems and pain points we tackle:__
-
->1) Staking is risky, let’s make it risk-free
-
-As explained in the previous section, the slashing risk does exist even though it can be perceived as having a very low probability, it happened and can still happen.
-
-**We want to make the staking activity as risk-free as possible for delegators.**
-
->2) The staking activity is perceived as a commodity, it is not
-
-Different types of validators exist and so far the only way to differentiate between a validator and another are the fees they apply. Some validators try to be as transparent as possible regarding their setups to show they are serious and committed to providing the most secure experience for their delegators, however the transparency marketing efforts don’t seem to be enough and do not represent any actual guarantee.
-
-The fact that some validators offer a 0% fee is a continuous hot topic within the Cosmos Hub community. The moment when one of the 0% validators became the biggest validator in the network for a short time crystallized a mix of frustrations and worries. Followed a debate over the long term implications with regard to the individual validators’ infrastructure security and the network’s level of decentralization / concentration of voting power and influence in the hands of a few.
-
-The slashing insurance allows to create a second level of differentiation that will be based on the risk score of each validator and the transactions that price it. For example, validators with 0% fees are likely to be perceived as not investing in their infrastructure and committing necessary human resources to make sure their operations run as smoothly and securely as possible. An investor who is interested in buying the risk of this validator would price it higher than the risk of another validator who’s team is specialized in setting “military grade” type of infrastructure and who is making all the necessary investments to get regularly audited, have back-up set-ups etc …
-
-**Our aim is to provide the delegator community with a new indicator (Risk Score) that will allow them to choose more wisely and take into account the risks related to choosing one validator over another.**
-
-In the spirit of differentiation, validators could also use the insurance product as a means to attract more delegations. One way of doing it can be to offer free insurance as part of their validation activity (for new delegations over a limited period of time for example). In this case validators could be buying their own risk or buying the premium from an investor and distributing the insurance token to delegators who meet certain criteria. The same reasoning could be applied to attract ICF/AiB delegations (InterChain Foundation and All in Bits represent around 20% of Atoms in circulation and are therefore the biggest delegators in existence).
-
-**We want validators to use the insurance as an additional service proposal that could help them increase their fees and differentiate in an already crowded market.**
-
->3) Liquidity of Delegation Vouchers or Bonded Atoms:
-
-Right now the delegation process implies a lock-up period of 21 days after unbonding before a delegator could move his Atoms. Unbonded Atoms can still be slashed during the 21 days lock-up period. Since the launch of Cosmos Hub, a need has been expressed by the community to have an alternative that gives more liquidity to delegators, either by using Delegation Vouchers (whenever someone stakes Atoms with a validator, he would receive a voucher representing staked Atoms + staking rewards to be retrieved from said validator) or bAtoms which is a similar solution. Both options create illiquid assets, each asset being linked to one particular validator and his slashing risk. Combining the resulting asset with an insurance would allow to neutralize the slashing risk and create a slashing-risk-free asset which will be more liquid.
-
-**We want the insurance to help make representations of staked (bonded) Atoms more liquid by neutralizing the slashing risk.**
 
 ### How long will it take 
 4 months with grants from both ICF (InterChain Foundation) and GECO, 6 months with a grant from GECO alone.
 
 
 ### How much funding are you requesting  
-+ Approx. 50K€ 
++ Approx. 60K€ 
 + a one million Dai credit line over one year (to kick off the project)
 + PR / Marketing assistance
 
+
 ### How did you hear about the GECO
-> Website, Twitter, Conference and others
+> Website, Telegram, Dappcon
 
 ## Your Proposal 
 
-### Team description
+To help understand what we are building and what staking derivatives are, here are some definitions that are based on the Tendermint (Cosmos) PoS consensus and could be applied to most PoS blockchains:
+
+
+Proof of Stake (PoS): consensus mechanism that runs virtually instead of relying on miners to solve hard cryptographic puzzles using their computer power.
+
+Validator: In PoS validators replace miners. Validators offer coin holders of a PoS blockchain the possibility to use their infrastructure to lock some coins as a stake. Validators then participate in the consensus process and get rewarded when blocks are added. The Staking Rewards are distributed to the coin holders and the validators are paid a percentage fee on those rewards. Validators are businesses who secure the network.This requires specific equipment and setups (Hardware security module,  computers in secured facilities etc...)
+
+Slashing: The punishment that occurs in case of a misbehaviour from one or several validators. Misbehaviours can range from being offline and missing blocks to double signing and trying to conduct an attack on the network. The slashing punishment ranges from 0.01% to 5% of the staked Atoms (with misbehaving validator) in the case of Cosmos Hub. The punishment can vary from one blockchain to another.
+
+Delegator: Coin owner / holder who stake it. When coin holders are not able to run a validator, they can delegate it to a validator of their choice. This allows them to receive the staking reward while bearing the same slashing risk (for Cosmos Hub). Delegators pay validators for their services a commission fee (percentage of their reward).
+
+Staking derivatives: coins, tokens or tools based on the staking activity. For example a slashing insurance token is a staking derivative.
+
+**The problems and pain points we tackle:**
+
+>1) Staking is risky, let’s make it risk-free
+
+As explained in the previous section, the slashing risk does exist even though it can be perceived as having a very low probability of happening, as a matter of fact it happened and can still happen, again.
+
+**=> We want to make the staking activity as risk-free as possible for delegators.**
+ 
+>2) The staking activity is perceived as a commodity, it is not
+
+Different types of validators exist and so far the only way to differentiate between a validator and another are the fees they apply. Some validators try to be as transparent as possible regarding their setups to show they are serious and committed to providing the most secure experience for their delegators, however the transparency marketing efforts don’t seem to be enough and do not represent any actual guarantee.
+The fact that some validators offer a 0% fee is a continuous hot topic within the Cosmos Hub community. The moment when one of the 0% validators became the biggest validator in the network for a short time crystallized a mix of frustrations and worries. Followed a debate over the long term implications with regard to the individual validators’ infrastructure security and the network’s level of decentralization / concentration of voting power and influence in the hands of a few.
+The slashing insurance allows to create a second level of differentiation that will be based on the Risk Score of each validator and the transactions that price it. For example, validators with 0% fees are likely to be perceived as not investing in their infrastructure and committing necessary human resources to make sure their operations run as smoothly and securely as possible. An investor who is interested in buying the risk of this validator would price it higher than the risk of another validator who’s team is specialized in setting “military grade” type of infrastructure and who is making all the necessary investments to get regularly audited, have back-up set-ups etc …
+
+**=> Our aim is to provide the delegator community with a new indicator (Risk Score) that will allow them to choose more wisely and take into account the risks related to choosing one validator over another.**
+
+In the spirit of differentiation, validators could also use the insurance product as a means to attract more delegations. One way of doing it can be to offer free insurance as part of their validation activity (for new delegations over a limited period of time for example). In this case validators could be buying their own risk or buying the premium from an investor and distributing the insurance token to delegators who meet certain criterias. The same reasoning could be applied to attract ICF/AiB delegations (InterChain Foundation and All in Bits represent around 20% of Atoms in circulation and are therefore the biggest delegators in existence).
+
+**=> We want validators to use the insurance as an additional service proposal that could help them increase their fees and differentiate in an already crowded market.**
+
+>3) Liquidity of Delegation Vouchers or Bonded Atoms:
+
+Right now the delegation process implies a lock-up period of 21 days after unbonding before a delegator could move his Atoms. Unbonded Atoms can still be slashed during the 21 days lock-up period. Since the launch of Cosmos Hub, a need has been expressed by the community to have an alternative that provides more liquidity to delegators, either by using Delegation Vouchers (whenever someone stakes Atoms with a validator, he would receive a voucher representing staked Atoms + staking rewards to be retrieved from said validator) or bAtoms which is a similar solution. Both options create illiquid assets, each asset being linked to one particular validator and his slashing risk. Combining the resulting asset with an insurance would allow to neutralize the slashing risk and create a slashing-risk-free asset which will be more liquid.
+
+**=> We want the insurance to help make representations of staked (bonded) Atoms more liquid by neutralizing the slashing risk.**
+
+**The market we are addressing:**
+
+Most PoS blockchains with slashing have or will have similar pain points to what we described above. Our objective is to be able to offer the insurance to as many blockchains and projects as possible. Our primary focus for the launch is Cosmos Hub then Tendermint based PoS networks (Terra, Kava, Sentinel, IOV, IrisNet, etc …). After that we will expand the functionalities to cover Tezos (with a slightly different approach), Polkadot (once launched), Ethereum (once Casper is launched) and possibly other PoS projects that have a slashing mechanism.
+
+Currently we have the support of 13 teams of the Cosmos ecosystem (validators, wallet providers, block explorers) and we expect to have more support by the time we launch. (see appendix) 
+
+**Why fund us:**
+
+1) We are familiar with the ecosystem / market, conducted our research and discussed with the different stakeholders. This allowed us to identify real problems for the Cosmos Network and PoS blockchains. We are building a product that is going to be used.
+2) We are building on top of the Gnosis Mercury / Conditional Tokens
+3) We are a team of experienced tech entrepreneurs with a passion for blockchain
+4) Our use case could be a great example of how conditional tokens can be used to tokenize insurance through prediction markets, and a DeFi success story
+5) The 1155 tokens that will be created could be traded on one of the DEXes Gnosis is developing
 
 ### Project description
+**TODO**
 _Outline a detailed description of your project, why you chose to build this project, the overall goal and future outlook of your project and why we should fund you._
 ### Features
-_How do you plan to implement your project, which tools and framework will you use? Optional: Architecture, Mockups, etc._
+
+In our current design, we plan to implement the slashing insurance around two main Smart Contracts and sets of Oracles that will be based on a modified version of Cosmos SDK. The design takes into account the existence of three types of users : Delegators - Validators - Investors
+
+Delegators can : 
+- Buy the premium to be insured then receive the 1155 Token
+- Directly receive the insurance and the token via airdrop from a validator who offers a free insurance as part of his service
+
+Validators can : 
+- Buy their own risks and consider it an additional source of revenue 
+- Buy the risk and the premium and airdrop the premium tokens to delegators
+- Buy the premium from an Investor and airdrop them to delegators 
+
+Investors can :
+- Buy validators slashing risks
+- Speculate on price variations of premiums (given that the insurance tokens become tradable)
+
+__Smart Contracts features:__
+
+- The order book contract: This contract will act as an order book, allowing Dai to be deposited and bid orders to be posted as well as premiums to be “market-bought” on the one hand. And 1155 tokens to be received and redeemed on the other hand.
+
+![The order book contract](./assets/PооlStаkе/The_order_book_contract.svg )
+
 ### Team description
 **Marouane Hajji: Product / Business Lead**
 
