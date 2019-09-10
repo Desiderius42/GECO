@@ -124,7 +124,7 @@ _Comments:_
 In case the validator is slashed the delegator will receive a percentage of the value at risk (here 50DAI), this could be up to 100%.
 In case the validator stops validating the delegator will be reimbursed a prorata temporis part of what they have paid (here 5 DAI).
 
-##### The conditional airdrop contract:
+#### The conditional airdrop contract:
  will distribute the 1155 tokens to ethereum wallets based on a set of conditions and will cancel the 1155 contract given certain conditions as well.
 
 ![The airdrop contract](./assets/PооlStаkе/Airdrop_contract.svg )
@@ -133,7 +133,7 @@ In case the validator stops validating the delegator will be reimbursed a prorat
 _Comments:_
 The delegator receives a free insurance through a token as long as he is still delegating. If he stops delegating, he loses the coverage.
 
-##### Oracle features:
+#### Oracle features:
 
 The Oracle will be based on a modified version of Cosmos SDK that will allow to extract all the needed data to be transmitted to the Gnosis Mercury smart contract in order to check which conditions are met. The objective is to build what we can call an “Interchain Oracle”.
 
